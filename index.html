@@ -80,6 +80,41 @@
             </div>
         </div>
     </section>
+    <section class="contacto" id="contacto">
+        <h2>Contactame</h2>
+        <div class="contenedor-contacto">
+            <div class="contenedor-mapa">
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Rafaela,+Santa+Fe,+Argentina&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                    <a class="googlemaps-made" href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium bootstrap themes</a>
+                    <style>#google-maps-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style>
+                </div>
+            </div>
+        <div class="contenedor-formulario">
+            <form action="">
+                <div class="input-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" class="input-field" required>
+                </div>
+                <div class="input-formulario">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" class="input-field" required>
+                </div>
+                <div class="input-formulario">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu email" class="input-field" required>
+                </div>
+                <div class="input-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input-field" required></textarea>
+                </div>
+                <input type="submit" value="Enviar" id="submit-btn" class="submit-btn">
+            </form>
+        </div> 
+        </div>
+    </section>
     
     <script src="assets/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
