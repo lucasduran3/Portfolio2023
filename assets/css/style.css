@@ -53,7 +53,7 @@ body{
     background-color: var(--second-bg-color);
     color: var(--primary-text-color);
 }
-
+/*Header*/
 nav{
     position: sticky;
     top: 0;
@@ -96,12 +96,13 @@ nav ul li{
     cursor: pointer;
     display: none;
 }
+/*Header*/
 .sobremi{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 3rem;
     max-width: 68.75rem;
     margin: auto;
    /*margin-top: var(--top-margin);*/
@@ -109,8 +110,8 @@ nav ul li{
 }
 
 .sobremi img{
-    height: 22.5rem;
-    width: 36.5rem;
+    height: 27.5rem;
+    width: 27.5rem;
     border-radius: 5%;
 }
 
