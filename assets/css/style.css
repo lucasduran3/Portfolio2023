@@ -90,6 +90,7 @@ nav ul li{
 }
 
 .menu-button{
+    color: #b9b9b9;
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -99,7 +100,7 @@ nav ul li{
 /*Header*/
 .sobremi{
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -107,6 +108,7 @@ nav ul li{
     margin: auto;
    /*margin-top: var(--top-margin);*/
     height: 100vh;
+   /*flex-wrap: wrap;*/
 }
 
 .sobremi img{
@@ -116,7 +118,7 @@ nav ul li{
 }
 
 .bio{
-    width: 40rem;
+    width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 8px 4px var(--secondary-shadow);
@@ -271,6 +273,7 @@ nav ul li{
     flex-direction: row;
     justify-content: center;
     gap: 7rem;
+    
 }
 
 .contenedor-formulario form{
@@ -280,6 +283,7 @@ nav ul li{
     padding: 0.938rem;
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
+
 }
 
 .contenedor-formulario label{
@@ -351,4 +355,79 @@ footer{
 
 footer p{
     margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 720px){
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    nav ul{
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+    nav ul li{
+        margin: 8px;
+    }
+    .menu-button{
+        display: block;
+    }
+    nav ul.show{
+        transform: translateX(0);
+    }
+    .sobremi{
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 9rem;
+        height: 100%;
+        margin-top: var(--top-margin);
+        margin-bottom: 4.5rem;
+    }
+    .sobremi img{
+        height: 20rem;
+        width: 20rem;
+    }
+    .bio{
+        margin-top: -7rem;
+        width: 20.5rem;
+    }
+    .mas-sobre-container{
+        margin-top: 2rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .mas-sobre-container img{
+        width: 90%;
+        align-self: center;
+    }
+    .mas-sobre h2{
+        text-align: center;
+    }
+    .mas-sobre p{
+        text-align: justify;
+    }
+    .icon{
+        width: 5.45rem;
+        height: 5.25rem;
+    }
+    .contenedor-proyectos{
+        flex-direction: column;
+    }
+    .contenedor-proyectos-in{
+        width: 20.875rem;
+    }
+    .contenedor-contacto{
+        flex-direction: column;
+        max-width: 23.75rem;
+        justify-content: center;
+        margin: auto;
+    }
+
+
 }
