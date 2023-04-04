@@ -420,14 +420,13 @@ footer p{
         flex-direction: column;
     }
     .contenedor-proyectos-in{
-        width: 20.875rem;
+        width: 15.875rem;
     }
     .contenedor-contacto{
         flex-direction: column;
         max-width: 23.75rem;
         justify-content: center;
         margin: auto;
+        padding: 2rem;
     }
-
-
 }
