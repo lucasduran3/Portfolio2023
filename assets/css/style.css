@@ -53,7 +53,7 @@ body{
     background-color: var(--second-bg-color);
     color: var(--primary-text-color);
 }
-/*Header*/
+/*---------------------------Header--------------------------------*/
 nav{
     position: sticky;
     top: 0;
@@ -97,7 +97,9 @@ nav ul li{
     cursor: pointer;
     display: none;
 }
-/*Header*/
+/*--------------------------Fin-Header-------------------------*/
+
+/*------------------------Sobre-Mi--------------------------*/
 .sobremi{
     display: flex;
     /*flex-direction: row;*/
@@ -133,7 +135,9 @@ nav ul li{
     line-height: var(--line-height);
     padding: 0.3rem 0;
 }
+/*------------------------Fin-SobreMi--------------------------*/
 
+/*-------------------------Mas-Sobre-Mi--------------------------*/
 .mas-sobre{
     background-color: var(--bg-color);
     padding: 2rem 3rem;
@@ -169,7 +173,9 @@ nav ul li{
     line-height: var(--line-height);
     padding: 0.4rem;
 }
+/*-------------------------Fin-Mas-Sobre-Mi--------------------------*/
 
+/*--------------------------Habilidades-------------------------------------*/
 .habilidades{
     background-color: var(--bg-color);
     padding: 2rem 0;
@@ -200,6 +206,9 @@ nav ul li{
 .icon:hover{
     transform: scale(1.2);
 }
+/*--------------------------Fin-Habilidades-------------------------------------*/
+
+/*--------------------------Proyectos-------------------------------------*/
 .proyectos{
     background-color: var(--bg-color);
     padding: 32px 0;
@@ -256,7 +265,9 @@ nav ul li{
     padding: 20px;
     margin: 2.5rem;
 }
+/*-------------------------Fin-Proyectos-------------------------------------*/
 
+/*------------------------------Contacto-------------------------*/
 .contacto{
     margin-top: 1.5rem;
     display: flex;
@@ -352,11 +363,16 @@ footer{
     text-align: center;
     color: #9c9faf;
 }
+/*-----------------------------Fin-Contacto-------------------------*/
 
+/*---------------------Footer--------------------------*/
 footer p{
     margin-top: 1.5rem;
 }
+/*---------------------Fin-Footer--------------------------*/
 
+
+/*-----------------Responsive-------------------------*/
 @media screen and (max-width: 720px){
     nav {
         padding: 1.5rem 1rem;
